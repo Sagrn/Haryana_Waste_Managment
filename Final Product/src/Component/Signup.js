@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { firestore } from "../Backend/firebase";
+import { firestore,database } from "../Backend/firebase";
 import { useNavigate ,Link} from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import "./Login&signup.css";
+import { addDoc, setDoc,collection } from "firebase/firestore";
 
 
 const Signup = () => {
@@ -32,7 +33,7 @@ const Signup = () => {
 
     //  For Authentication
     const { email, password } = users;
-    createUserWithEmailAndPassword(firestore, email, password)
+    createUserWithEmailAndPassword(database, email, password)
       .then((data) => {
         console.log(data, "authData");
         history("/signup");
@@ -40,7 +41,19 @@ const Signup = () => {
       .catch((err) => {
         alert(err.code);
       });
+
+      const userFireData = async(e) => {
+      await addDoc(collection(firestore,"userData"),{
+         name : users.name,
+         email : users.email
+      });
+    }
+    userFireData();
+      // console.log(users.name);
+      // console.log(users.email);
+      
   };
+
 
   const postData = async (e) => {
     const { email, password, name,number } = users;
@@ -60,6 +73,8 @@ const Signup = () => {
       }
     );
   };
+
+  
   return (
     <>
       <section className="login_container">
@@ -110,7 +125,7 @@ const Signup = () => {
                   name="otp"
                   value={users.otp}
                   onChange={getUsersData}
-                  required
+                  // required
                 />
              
                 <label for="">OTP</label>

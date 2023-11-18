@@ -18,7 +18,7 @@ export default function Certificate() {
  
 console.log(userEmail);
 
-  const q = query(userDataRef,where("Email","==",userEmail));
+  const q = query(userDataRef,where("email","==",userEmail));
 
    const [userName , setUserName] = useState("First Login");
    
