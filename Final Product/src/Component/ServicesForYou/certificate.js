@@ -12,7 +12,13 @@ export default function Certificate() {
  
   useEffect(()=>{
     // console.log(database.currentUser.email);
+    try{
     setUserEmail(database.currentUser.email);
+    }
+    catch(e){
+      console.log(e);
+    }
+
   })
 
  
