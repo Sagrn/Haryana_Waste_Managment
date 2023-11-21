@@ -3,6 +3,7 @@ import './WasteTypeForm.css'; // Import your CSS file for styling
 import { firestore } from "../Backend/firebase";
 import { addDoc, collection } from "@firebase/firestore";
 import { Link } from 'react-router-dom'
+
 const WasteTypeForm = () => {
 
   const [certificate, setCertificate] = useState(false);

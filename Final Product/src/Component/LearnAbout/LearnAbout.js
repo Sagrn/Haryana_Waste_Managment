@@ -19,7 +19,7 @@ const LearnAbout = () => {
             
             <div id="how-to-use">
                 <h2>How to Use ?</h2>
-                <p></p>
+                <p>Know how to use this website there are different ways given to understand the waste management in better way</p>
             </div>
             
             <div id="user-type">

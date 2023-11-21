@@ -32,7 +32,7 @@ function WasteManagementServices() {
               style={{ display: listDisplay.mixedList ? "block" : "none" }}
             >
               <li>
-                <Link to="#">Learn From Video</Link>
+                <Link to="/LearnAbout">Learn From Video</Link>
               </li>
               <li>
                 <Link to="/WasteTypeForm">Composition Chart</Link>
@@ -49,7 +49,7 @@ function WasteManagementServices() {
               style={{ display: listDisplay.segregatedList ? "block" : "none" }}
             >
               <li>
-                <Link to="#">Learn From Video</Link>
+                <Link to="/LearnAbout">Learn From Video</Link>
               </li>
               <li>
                 <Link to="#">Partially</Link>
@@ -69,7 +69,7 @@ function WasteManagementServices() {
               style={{ display: listDisplay.disposalList ? "block" : "none" }}
             >
               <li>
-                <Link to="#">Learn From Video</Link>
+                <Link to="/LearnAbout">Learn From Video</Link>
               </li>
               <li>
                 <Link to="#">Go to White Page</Link>

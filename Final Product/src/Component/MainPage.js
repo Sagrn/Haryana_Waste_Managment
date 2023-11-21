@@ -3,6 +3,17 @@ import "./MainPage.css";
 import img1  from "../Assets/Images/Chairman--Ashwani-Kumarjpg-dd7c5c19a853db9e6e0e8b9fab4bad65.jpg";
 import img2  from "../Assets/Images/MSjpg-3d0873c01fc24f067d483021570f13c5.jpg"
 import satymev from "../Assets/Images/satymev.png";
+import img10  from "../Assets/Images/2ac5127bf0b5975f414662fdd29298b6.jpg"
+import img11  from "../Assets/Images/484fb69cfce8ac6171815667868624c1.jpg"
+import img12  from "../Assets/Images/safe_disposal_waste_image.jpeg"
+import img13  from "../Assets/Images/waste.jpg"
+import img14  from "../Assets/Images/modi.jpeg"
+import img15  from "../Assets/Images/img1.jpg"
+import img16  from "../Assets/Images/bg1.jpg"
+import img17  from "../Assets/Images/indi.jpg"
+import img18  from "../Assets/Images/grp.webp"
+
+
 const MainPage = () => {
   return (
     <>
@@ -98,10 +109,8 @@ const MainPage = () => {
               STUDENTS
             </div>
             <div className="total3">
-              <i className="bx bx-user"></i>
-              <br />
               <span className="links_name">
-                have Already <br />
+               1253,55 have Already <br />
                 UPLOADED THE VIDEO
               </span>
             </div>
@@ -109,11 +118,11 @@ const MainPage = () => {
         </div>
 
         <div className="products" id="products">
-          <h1>swachh Abhiyan</h1>
+          <h1>Swachh Abhiyan</h1>
           <div className="box">
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (1).jpg" />
+                <img src={img10}/>
               </div>
 
               <div className="products_text">
@@ -124,7 +133,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (3).jpg" />
+                <img src={img11} />
               </div>
 
               <div className="products_text">
@@ -135,7 +144,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (2).jpg" />
+                <img src={img12} />
               </div>
 
               <div className="products_text">
@@ -146,7 +155,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (4).jpg" />
+                <img src={img13} />
               </div>
 
               <div className="products_text">
@@ -157,7 +166,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (5).jpg" />
+                <img src={img14} />
               </div>
 
               <div className="products_text">
@@ -168,7 +177,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (6).jpg" />
+                <img src={img15} />
               </div>
 
               <div className="products_text">
@@ -179,7 +188,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download (7).jpg" />
+                <img src={img16} />
               </div>
 
               <div className="products_text">
@@ -190,7 +199,7 @@ const MainPage = () => {
 
             <div className="card">
               <div className="image">
-                <img src="C:\Users\USER\OneDrive\Documents\college internship\waste free project\images\download.jpg" />
+                <img src={img17} />
               </div>
 
               <div className="products_text">

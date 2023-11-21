@@ -49,7 +49,7 @@ console.log(userEmail);
 
     let name =userName;
     let date = new Date();
-    let todayDate = date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
+    let todayDate = date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
     let generatePDF = () =>{
         var doc = new jsPDF('l','pt','a4');
         doc.html(document.querySelector(".certificate"),{
