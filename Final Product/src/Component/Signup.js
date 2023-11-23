@@ -48,7 +48,7 @@ const Signup = () => {
          email : users.email
       });
     }
-    userFireData();
+    userFireData();  
       // console.log(users.name);
       // console.log(users.email);
       
